@@ -18,3 +18,9 @@
 
 #Variables de entorno
 -PORT=3001
+
+#Rutas creadas
+
+#-http://localhost:3001/
+#-http://localhost:3001/primera
+#-http://localhost:3001/segunda
