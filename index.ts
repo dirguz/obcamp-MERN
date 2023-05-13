@@ -16,10 +16,20 @@ app.get('/',(req: Request, res: Response) =>{
     res.send('Hello World, Welcome to APP Express + TS + Nodemon + Jest + Swagger + Mongoose');
 });
 
-app.get('/nuevo',(req: Request, res: Response) =>{
+app.get('/primera',(req: Request, res: Response) =>{
     // send Hello World
-    res.send('GET: Nueva Ruta');
+    res.json({message:"Goodbye, world"});
 });
+
+app.get('/segunda',(req: Request, res: Response) =>{
+    const {name}=req.query;
+    console.log(name);
+    if(name){
+        res.json({message:`Hola ${name}`});
+    }else{
+       res.json({message:"Hola anonimo"});}
+});
+
 
 // Execute APP and Listen Request to PORT
 app.listen(port, () => {
