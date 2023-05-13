@@ -7,7 +7,6 @@ export const LogSuccess=(menssage:string)=>{
 export const Logarning=(menssage:string)=>{
     console.log(`Warning: ${menssage}`);
 }
-
 export const LogError=(menssage:string)=>{
     console.log(`Error: ${menssage}`);
 }

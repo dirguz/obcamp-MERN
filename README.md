@@ -21,6 +21,6 @@
 
 #Rutas creadas
 
-#-http://localhost:3001/
-#-http://localhost:3001/primera
-#-http://localhost:3001/segunda
+-http://localhost:3001/api
+-http://localhost:3001/api/hello
+-http://localhost:3001/api/goodbye

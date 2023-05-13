@@ -5,6 +5,7 @@
 
 import express, {Request, Response} from 'express';
 import helloRouter from './HelloRouter';
+import goodBayRouter from './GoodByeRouter';
 import { LogInfo } from '../utils/logger';
 
 //server instance
@@ -25,6 +26,7 @@ rootRouter.get('/',(req: Request, res: Response) =>{
 
 server.use('/',rootRouter);
 server.use('/hello', helloRouter);
+server.use('/goodbye',goodBayRouter);
 
 //Add more routes
 
